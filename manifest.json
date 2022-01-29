@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name"            : "Programming Memes by @procoder.live",
+    "version"         : "1.0",
+    "permissions": [
+        "https://embedsocial.com/cdn/ht.js"
+    ],
+    "background": {
+        "scripts": ["script.js"],
+        "persistent": false
+      },
+    "description"     : "Get daily dose of programming memes",
+    "icons": {
+        "128"   : "logo.PNG"
+    },
+    "browser_action": {
+        "default_icon"   : "logo.PNG",
+        "default_popup" : "popup.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://embedsocial.com/; object-src 'self'"
+}
